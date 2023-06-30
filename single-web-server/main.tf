@@ -3,11 +3,6 @@
 # This template runs a simple "Hello, World" web server on a single EC2 Instance
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 terraform {
-  backend "s3" {
-    region = "ap-south-1"
-    bucket = "eaas-roost-terraform-states"
-    key    = "eaas-grpc"
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
